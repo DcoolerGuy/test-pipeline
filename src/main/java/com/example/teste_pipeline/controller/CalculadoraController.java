@@ -17,6 +17,6 @@ public class CalculadoraController {
 
     @PostMapping("/divisao/{a}/{b}")
     public ResponseEntity<Double> divisao (@PathVariable double a, @PathVariable double b){
-        return ResponseEntity.ok(CalculadoraService.dividir(a,b));
+        return ResponseEntity.ok(calculadoraService.dividir(a, b));
     }
 }

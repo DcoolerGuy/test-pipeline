@@ -6,7 +6,8 @@ import org.springframework.web.server.ResponseStatusException;
 
 @Service
 public class CalculadoraService {
-    public static Double dividir(double a, double b) {
+
+    public Double dividir(double a, double b) {
 
         if (b == 0){
             throw new ResponseStatusException(
