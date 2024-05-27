@@ -1,9 +1,10 @@
-name: Exemplo de CI
+name: Exemplo de CI #teste pr
 
 on:
   pull_request:
     branches:
       - main
+      - develop
     types: [ opened, reopened ]
 
 jobs:
